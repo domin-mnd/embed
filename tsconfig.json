@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES2017",
+    "module": "ES2020",
+    "lib": ["es2020", "DOM", "WebWorker", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@builder.io/qwik",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "outDir": "tmp",
+    "noEmit": true,
+    "types": ["node", "vite/client"],
+    "baseUrl": ".", // # /src/src issue for qwik 1.0.0
+    "paths": {
+      "@component/*": ["./src/components/*/index.ts"],
+      "@hook/*": ["./src/hooks/*/index.ts"],
+      "@util/*": ["./src/utils/*"],
+      "@theme/*": ["./src/styles/theme/*.css.ts"],
+      "@style/*": ["./src/styles/*/index.ts"],
+      "@lib/*": ["./src/lib/*"],
+      "@public/*": ["./public/*"],
+      "@config/*": ["./public/config/*"],
+    }
+  },
+  "files": ["./.eslintrc.cjs"],
+  "include": ["src"]
+}
