@@ -40,3 +40,8 @@ lerna-debug.log*
 
 # Temporary dump
 ikota.config.js
+
+# Vercel
+.vercel
+
+.vercel
