@@ -1,18 +1,6 @@
-import { rem } from "@util/units/rem";
 import { globalStyle } from "@vanilla-extract/css";
 import { style } from "styled-vanilla-extract/qwik";
-
-export const container: string = style({
-  flexGrow: 1,
-
-  "@media": {
-    "screen and (max-width: 820px)": {
-      display: "flex",
-      flexDirection: "column",
-      gap: rem(10),
-    },
-  },
-});
+import { container } from "./container.css";
 
 export const box: string = style({
   "@media": {
@@ -54,17 +42,25 @@ globalStyle(`${container}:hover ${box}:nth-child(2)`, {
 });
 
 globalStyle(`${box}:nth-child(3)`, {
-  zIndex: 1,
+  zIndex: 2,
 });
 globalStyle(`${container}:hover ${box}:nth-child(3)`, {
-  transform: `translateX(-80%) translateY(15%) rotate(-5.37deg)`,
+  transform: `translateX(-150%) translateY(-40%) rotate(-13.5deg)`,
   transition: "transform .7s, opacity .3s",
 });
 
 globalStyle(`${box}:nth-child(4)`, {
-  zIndex: 2,
+  zIndex: 1,
 });
 globalStyle(`${container}:hover ${box}:nth-child(4)`, {
+  transform: `translateX(-80%) translateY(15%) rotate(-5.37deg)`,
+  transition: "transform .7s, opacity .3s",
+});
+
+globalStyle(`${box}:nth-child(5)`, {
+  zIndex: 2,
+});
+globalStyle(`${container}:hover ${box}:nth-child(5)`, {
   transform: `translateX(20%) translateY(65%) rotate(4deg)`,
   transition: "transform .7s, opacity .3s",
 });

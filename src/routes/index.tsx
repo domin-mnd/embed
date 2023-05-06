@@ -4,7 +4,8 @@ import { Badge } from "@component/ui/badge";
 import { Box } from "@component/ui/box";
 import { Input } from "@component/ui/input";
 import { theme } from "@theme/general";
-import { box, container } from "./styles.css";
+import { box, container, color } from "@style/pages/index";
+import { ColorPicker } from "@component/ui/color-picker";
 
 export default component$(() => {
   return (
@@ -17,10 +18,11 @@ export default component$(() => {
         <Badge color={theme.color.badge.blue} label="Title" />
         <Input placeholder="Your title" />
       </Box>
-      {/* <Box width={212} class={box}>
-        <span>Pick your color</span>
-        <Input placeholder="Your title" />
-      </Box> */}
+      <Box width={193} class={[box, color]}>
+        {/* <span>Pick your color</span> */}
+        {/* <Input type="color" /> */}
+        {/* <ColorPicker /> */}
+      </Box>
       <Box width={300} class={box}>
         <Badge color={theme.color.badge.purple} label="Description" />
         <Input placeholder="A detailed description" textarea />
