@@ -1,45 +1,9 @@
-# TODO
+# Deprecated
 
-## Vercel Edge
-
-This starter site is configured to deploy to [Vercel Edge Functions](https://vercel.com/docs/concepts/functions/edge-functions), which means it will be rendered at an edge location near to your users.
-
-## Installation
-
-The adaptor will add a new `vite.config.ts` within the `adapters/` directory, and a new entry file will be created, such as:
+Why? The project was meant to allow users generate [Open Graph](https://ogp.me/) tags and embed them in an empty message in Discord as for the newer update that tested markdown features like headings, lists & [hyperlinks](https://www.reddit.com/r/discordapp/comments/12m9ytf). You could make an empty link like this:
 
 ```
-└── adapters/
-    └── vercel-edge/
-        └── vite.config.ts
-└── src/
-    └── entry.vercel-edge.tsx
+[** **](https://example.com/)
 ```
 
-Additionally, within the `package.json`, the `build.server` script will be updated with the Vercel Edge build.
-
-## Production build
-
-To build the application for production, use the `build` command, this command will automatically run `yarn build.server` and `yarn build.client`:
-
-```shell
-yarn build
-```
-
-[Read the full guide here](https://github.com/BuilderIO/qwik/blob/main/starters/adapters/vercel-edge/README.md)
-
-## Dev deploy
-
-To deploy the application for development:
-
-```shell
-yarn deploy
-```
-
-Notice that you might need a [Vercel account](https://docs.Vercel.com/get-started/) in order to complete this step!
-
-## Production deploy
-
-The project is ready to be deployed to Vercel. However, you will need to create a git repository and push the code to it.
-
-You can [deploy your site to Vercel](https://vercel.com/docs/concepts/deployments/overview) either via a Git provider integration or through the Vercel CLI.
+But after the initial global release of the markdown update Discord decided to remove the feature [temporarily](https://www.reddit.com/r/discordapp/comments/13ptycq/comment/jlb8kn5) for [obvious reason](https://www.youtube.com/watch?v=ULTWJB1Edlc) thus project is archived for *some time*.
